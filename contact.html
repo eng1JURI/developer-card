@@ -24,7 +24,7 @@
   <main class="container">
     <h1>Contact Me</h1>
 
-    <form method="get">
+    <form id="contact-form" method="get">
       <p>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -43,14 +43,16 @@
       </p>
       <p>
         <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="4" minlength="20"></textarea>
+        <textarea id="message" name="message" rows="4" minlength="10"></textarea>
       </p>
       <button type="submit">Send Message</button>
     </form>
+    <p id="form-status" class="status" lang="ar" dir="rtl" aria-live="polite"></p>
   </main>
 
   <footer>
     <p>&copy; 2026 Juri Albeshri</p>
   </footer>
+  <script type="module" src="js/contact.js"></script>
 </body>
 </html>
